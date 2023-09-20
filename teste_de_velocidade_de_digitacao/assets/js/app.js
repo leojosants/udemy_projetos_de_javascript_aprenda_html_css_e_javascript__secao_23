@@ -67,10 +67,28 @@ const addToHistory = (typed_text, time_spent) => {
     history.appendChild(item_history);
 };
 
+// 
+const restartTest = () => {
+    input.value = '';
+    result.textContent = '';
+    localStorage.setItem('test_in_progress', false);
+    localStorage.removeItem('test_in_progress');
+    localStorage.removeItem('start_time');
+    history.innerHTML = '';
+};
+
+// 
+const toggleTheme = () => {
+    const body = document.body;
+    body.classList.toggle('clear_theme');
+    body.classList.toggle('dark_theme');
+};
+
 /*
     events
 */
-// 
 input.addEventListener('keyup', updateTest);
+restart.addEventListener('click', restartTest);
+toggle_theme_button.addEventListener('click', toggleTheme);
 
 newText();
