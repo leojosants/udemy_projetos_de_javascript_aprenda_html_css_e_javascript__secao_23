@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<!--  -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!--  -->
+		<title>Teste de Velocidade de Digitação</title>
+
+		<!--  -->
+		<link rel="stylesheet" href="assets/css/styles.css" />
+
+		<!--  -->
+		<script src="assets/js/app.js" defer></script>
+	</head>
+	<body>
+        <!--  -->
+		<h1>Teste de Velocidade de Digitação</h1>
+
+		<!--  -->
+		<p class="instructions" data_instructions>
+			Para começar o teste, clique na caixa de testo abaixo e comece a
+			digitar o texto exibido acima dela. O cronômetro começará
+			automaticamente aquim que você começar a digitar. Quando você terminar
+			de digitar o texto corretamente, o tempo que você levou será exibido.
+		</p>
+
+		<!--  -->
+		<div id="text" data_test></div>
+
+        <!--  -->
+        <textarea name="input" id="input" rows="5"></textarea>
+
+        <!--  -->
+        <div class="result" data_result></div>
+
+        <!--  -->
+        <button id="restart" data_restart>Reiniciar</button>
+
+        <!--  -->
+        <div id="history" data_history></div>
+
+        <!--  -->
+        <button id="toggle theme" data_toggle theme>Alternar</button>
+	</body>
+</html>
